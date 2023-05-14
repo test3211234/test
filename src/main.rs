@@ -38,7 +38,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .service(submit)
     })
-    .bind(("127.0.0.1", 1234))?
+    .bind(("0.0.0.0", 8088))?
     .run()
     .await
 }
